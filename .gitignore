@@ -1,0 +1,20 @@
+# Environment variables
+.env
+
+# Python caching
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.env_folder/
+
+# IDEs
+.vscode/
+.idea/
+
+# Models/large files (optional, but good practice if not using Git LFS)
+# models/*.keras 

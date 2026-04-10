@@ -10,20 +10,22 @@ Original file is located at
 # ==========================================
 # 1. SETUP & DATASET DOWNLOAD
 # ==========================================
-!pip install -q kagglehub
-import kagglehub
+#!pip install -q kagglehub
+#import kagglehub
 import os
 
-print("Downloading dataset via kagglehub...")
+#print("Downloading dataset via kagglehub...")
 # Download latest version of the dataset
-dataset_path = kagglehub.dataset_download("yasirahmad0810/consolidated-corn-dataset")
-print("Path to dataset files:", dataset_path)
+#dataset_path = kagglehub.dataset_download("yasirahmad0810/consolidated-corn-dataset")
+#print("Path to dataset files:", dataset_path)
 
 # Point the training directory to the downloaded path
 # We check if there's a nested 'data' folder just in case
-DATA_DIR = dataset_path
+dataset_path = "E:\\data"  # Define the dataset path
 if os.path.exists(os.path.join(dataset_path, "data")):
-    DATA_DIR = os.path.join(dataset_path, "data")
+        DATA_DIR = os.path.join(dataset_path, "data")
+else:
+        DATA_DIR = dataset_path
 
 os.makedirs('models', exist_ok=True)
 

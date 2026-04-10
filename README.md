@@ -65,3 +65,6 @@ The application will be accessible at `http://localhost:5000` (or `http://localh
 
 ## 🔒 Security Note
 Certain files such as `.env` and `.venv` are intentionally excluded from version control to protect sensitive API keys and maintain a clean repository.
+
+## 📄 License
+This project is licensed under the [MIT License](LICENSE).

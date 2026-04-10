@@ -1,5 +1,10 @@
 # Environment variables
 .env
+.env.*
+
+# Private files and folders
+private/
+private
 
 # Python caching
 __pycache__/
@@ -8,6 +13,7 @@ __pycache__/
 *.pyd
 
 # Virtual environments
+.venv/
 venv/
 env/
 .env_folder/
@@ -16,5 +22,10 @@ env/
 .vscode/
 .idea/
 
-# Models/large files (optional, but good practice if not using Git LFS)
-# models/*.keras 
+# Models/large files
+models/*.keras
+models/*.h5
+
+# OS generated files
+.DS_Store
+Thumbs.db
